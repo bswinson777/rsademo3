@@ -1,15 +1,3 @@
-dn: uid=bswinson,ou=People,${USER_BASE_DN}
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-objectClass: pf-connected-identities
-sn: Swinson
-cn: Bill Swinson
-givenname: Bill
-uid: bswinson
-userPassword: 2Federate
-
 dn: uid=user.0,ou=People,${USER_BASE_DN}
 objectClass: top
 objectClass: person
@@ -19,7 +7,7 @@ objectClass: pf-connected-identities
 sn: Brooke
 cn: Raeann Brooke
 uid: user.0
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=user.0
 
 dn: uid=user.1,ou=People,${USER_BASE_DN}
@@ -31,7 +19,7 @@ objectClass: pf-connected-identities
 sn: Seawell
 cn: Esko Seawell
 uid: user.1
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=user.1
 
 dn: uid=user.2,ou=People,${USER_BASE_DN}
@@ -43,7 +31,7 @@ objectClass: pf-connected-identities
 sn: Tancordo
 cn: Sidonia Tancordo
 uid: user.2
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=user.2
 
 dn: uid=user.3,ou=People,${USER_BASE_DN}
@@ -55,7 +43,7 @@ objectClass: pf-connected-identities
 sn: Knio
 cn: Pierre-Marc Knio
 uid: user.3
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=user.3
 
 dn: uid=user.4,ou=People,${USER_BASE_DN}
@@ -67,7 +55,7 @@ objectClass: pf-connected-identities
 sn: Psutka
 cn: Terza Psutka
 uid: user.4
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=user.4
 
 dn: uid=administrator,ou=People,${USER_BASE_DN}
@@ -79,7 +67,7 @@ objectClass: pf-connected-identities
 sn: PingFederate
 cn: Administrator
 uid: administrator
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=administrator
 
 dn: uid=access2federate,ou=People,${USER_BASE_DN}
@@ -91,7 +79,7 @@ objectClass: pf-connected-identities
 sn: PingAccess
 cn: pingFederateAdministrator
 uid: access2federate
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=access2federate
 
 
@@ -104,7 +92,7 @@ objectClass: pf-connected-identities
 sn: PingFederate
 cn: Auditor
 uid: auditor
-userPassword: 2Federate
+userPassword: 2FederateM0re
 pf-connected-identity: auth-source=pf-local-identity:user-id=auditor
 
 
