@@ -54,9 +54,10 @@ services:
     #  - ${HOME}/projects/devops/volumes/full-stack.pingdirectory:/opt/out
     #  - ${HOME}/projects/devops/pingidentity-server-profiles/baseline/pingdirectory:/opt/in
     ports:
-      - 1636-1646:636
+      - 1636:636
       - 1443-1453:443
     networks:
+      - pingnet-dmz
       - pingnet-internal
   
   pingdataconsole:
