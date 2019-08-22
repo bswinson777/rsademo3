@@ -1185,7 +1185,7 @@
         <Logger name="com.pingidentity.pf.email" level="INFO" />
         <Logger name="org.sourceid" level="DEBUG" />
         <Logger name="org.sourceid.saml20.domain.mgmt.impl.DataDeployer" level="DEBUG" />
-        <Logger name="org.sourceid.saml20.util.SystemUtil" level="INFO" additivity="false">
+        <Logger name="org.sourceid.saml20.util.SystemUtil" level="DEBUG" additivity="false">
             <AppenderRef ref="CONSOLE" />
             <AppenderRef ref="FILE" />
         </Logger>
@@ -1217,8 +1217,8 @@
         <!-- Adjust the priority value to DEBUG to get additional logging to help troubleshoot XML Signature problems -->
         <Logger name="org.sourceid.common.dsig" level="INFO" />
         <Logger name="org.sourceid.saml20.domain.mgmt.impl.PluginSupport" level="INFO" />
-        <Logger name="com.pingidentity" level="INFO" />
-        <Logger name="com.pingidentity.common.util.ErrorHandler" level="INFO" additivity="false">
+        <Logger name="com.pingidentity" level="DEBUG" />
+        <Logger name="com.pingidentity.common.util.ErrorHandler" level="DEBUG" additivity="false">
             <AppenderRef ref="CONSOLE" />
             <AppenderRef ref="FILE" />
         </Logger>
@@ -1472,8 +1472,9 @@
             -->
         </Logger>
 
-        <Logger name="com.pingidentity.appserver.jetty.PingFederateInit" level="ERROR" additivity="false" includeLocation="false">
+        <Logger name="com.pingidentity.appserver.jetty.PingFederateInit" level="INFO" additivity="false" includeLocation="false">
             <AppenderRef ref="CONSOLE" />
+            <AppenderRef ref="FILE" />
         </Logger>
 
         <Logger name="org.pingidentity.RunPF" level="ERROR" additivity="false" includeLocation="false">
@@ -1491,7 +1492,7 @@
             For database logging, comment the <AsyncRoot> block and uncomment the <Root> block.
         -->
         <AsyncRoot level="INFO" includeLocation="false">
-            <!-- <AppenderRef ref="CONSOLE" /> -->
+            <AppenderRef ref="CONSOLE" />
             <AppenderRef ref="FILE" />
         </AsyncRoot>
 
