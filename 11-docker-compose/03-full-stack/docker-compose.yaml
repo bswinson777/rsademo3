@@ -24,25 +24,7 @@ services:
     networks:
       - pingnet-dmz
 
-  pingfederate2:
-    image: pingidentity/pingfederate:${PING_IDENTITY_DEVOPS_TAG}
-    command: wait-for pingdirectory:389 -t 300 -- entrypoint.sh start-server
-    environment:
-      - SERVER_PROFILE_URL=https://github.com/bswinson777/rsademo3.git
-      - SERVER_PROFILE_PATH=baseline/pingfederate
-    env_file:
-      - ~/.pingidentity/devops
-    #volumes:
-    #  - ${HOME}/projects/devops/volumes/full-stack.pingfederate2:/opt/out
-    #  - ${HOME}/projects/devops/pingidentity-server-profiles/baseline/pingfederate2:/opt/in
-    ports:
-      - 9032:9032
-      - 9998:9998
-    networks:
-      - pingnet-dmz
-      - pingnet-internal
-
-  pingfederate1:
+  pingfederate:
     image: pingidentity/pingfederate:${PING_IDENTITY_DEVOPS_TAG}
     command: wait-for pingdirectory:389 -t 300 -- entrypoint.sh start-server
     environment:
@@ -75,6 +57,7 @@ services:
       - 1636-1646:636
       - 1443-1453:443
     networks:
+      - pingnet-dmz
       - pingnet-internal
   
   pingdataconsole:
@@ -82,7 +65,8 @@ services:
     ports:
       - 8080:8080
       - 8443:8443
-    networks: 
+    networks:
+      - pingnet-dmz 
       - pingnet-internal
               
 networks:
