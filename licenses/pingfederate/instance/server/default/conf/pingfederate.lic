@@ -1,0 +1,13 @@
+ID=1365572
+Organization=68
+Product=PingFederate
+Version=9.3
+IssueDate=2019-08-19
+EnforcementType=3
+ExpirationDate=2023-09-18
+Tier=Perpetual
+SaasProvisioning=true
+WSTrustSTS=true
+OAuth=true
+SignCode=FF07
+Signature=302C021435D202FDF2E3517B758B6F59C2A6B40BF48D781B02141E88D297BC6D033156EB4759F7054AD654D8EC69
